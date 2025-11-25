@@ -94,7 +94,22 @@
           ------- holomenu-extra-small.jpg *** 300 pixels wide
 
         -->
-              <img alt="Holographic Menu" src="images/holomenu-medium.jpg" />
+          <img 
+            alt="Holographic Menu" 
+            src="images/holomenu-medium.jpg" 
+            srcset="
+              images/holomenu-extra-small.jpg 300w,
+              images/holomenu-small.jpg 500w, 
+              images/holomenu-medium.jpg 700w, 
+              images/holomenu-large.jpg 1000w
+            "
+            sizes="
+              (max-width: 559px) calc(100vw - 110px), 
+              (max-width: 776px) calc(49vw - 110px), 
+              320px
+            "
+            loading="lazy"
+          />
             </div>
             <!-- end gallery-item -->
             <div class="gallery-item">
