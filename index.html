@@ -53,7 +53,20 @@
       ------- spaceport-small.jpg *** 450 pixels wide
 
     -->
-          <img alt="Spaceport" src="images/spaceport-large.jpg" />
+          <img 
+            alt="Spaceport" 
+            src="images/spaceport-large.jpg" 
+            srcset="
+              images/spaceport-small.jpg 450w, 
+              images/spaceport-medium.jpg 900w, 
+              images/spaceport-large.jpg 1800w
+            "
+            sizes="
+              (max-width: 960px) calc(100vw - 60px), 
+              900px
+            "
+            loading="lazy"
+          />
         </div>
         <!-- end banner -->
         <div class="gallery-section">
