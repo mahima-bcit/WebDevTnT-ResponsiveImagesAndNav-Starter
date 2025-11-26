@@ -172,11 +172,17 @@
           element. This is needed for the CSS
 
     -->
-          <img
-            class="featured-image"
-            src="images/float-menu-wide.jpg"
-            alt="Floating Menu System"
-          />
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="images/float-menu-closeup.jpg"
+            />
+            <img
+              class="featured-image"
+              src="images/float-menu-wide.jpg"
+              alt="Floating Menu System"
+            />
+          </picture>
 
           <p>
             Look again at that dot. That's here. That's home. That's us. On it
