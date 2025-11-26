@@ -134,7 +134,22 @@
           ------- vr-menu-extra-small.jpg *** 300 pixels wide
 
         -->
-              <img alt="Virtual Reality Menu" src="images/vr-menu-medium.jpg" />
+              <img 
+                alt="Virtual Reality Menu" 
+                src="images/vr-menu-medium.jpg" 
+                srcset="
+                images/vr-menu-extra-small.jpg 300w,
+                images/vr-menu-small.jpg 500w,
+                images/vr-menu-medium.jpg 700w,
+                images/vr-menu-large.jpg 1000w
+                "
+                sizes="
+                (max-width: 559px) calc(100vw - 110px),
+                (max-width: 776px) calc(49vw - 110px),
+                320px
+                "
+                loading="lazy"
+              />
             </div>
             <!-- end gallery-item -->
           </div>
