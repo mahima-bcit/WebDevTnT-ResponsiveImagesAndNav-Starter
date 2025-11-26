@@ -223,6 +223,30 @@ footer {
 	}
 }
 
+@media (max-width: 759px) {
+  #main-navigation {
+    display: none;
+	position: absolute;
+    top: 70px;
+    right: 30px;
+    background: #fff;
+    padding: 15px 20px;
+    width: 150px;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+
+  .hamburger-menu.open + #main-navigation {
+    display: block;
+  }
+
+  #main-navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 
 
 
