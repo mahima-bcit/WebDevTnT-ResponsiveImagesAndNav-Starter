@@ -212,8 +212,39 @@ footer {
 }
 
 @media (min-width: 760px) {
+	.hamburger-menu {
+		display: none;
+	}
 
+	#main-navigation {
+		display: block;
+		position: static;
+	}
 
+	#main-navigation ul {
+		display: flex;
+	}
+
+	#main-navigation a {
+		text-decoration: none;
+		color: #000;
+		font-weight: 600;
+		padding: 8px 12px;
+		border: 1px solid #000;
+	}
+
+	#main-navigation a:hover {
+		background: #f0f0f0;
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+	}
+	
+	header h1 {
+		margin-right: auto;
+	}
 }
 
 @media (min-width: 960px){
