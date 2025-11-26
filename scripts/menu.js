@@ -13,5 +13,6 @@ btnMenu.addEventListener('mousedown', function (e) {
 });
 
 function openMenu() {
-  // Do some open/close nav stuff here...
+  btnMenu.classList.toggle('open');
+  nav.classList.toggle('open');
 }

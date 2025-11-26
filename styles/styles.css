@@ -276,6 +276,10 @@ footer {
     flex-direction: column;
     gap: 12px;
   }
+
+  #main-navigation.open {
+	display: block;
+  }
 }
 
 
