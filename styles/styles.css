@@ -187,6 +187,9 @@ footer {
 
 @media (min-width: 960px){
 	/* *** NOTE: Add the background image for the body here... */
+	body {
+		background-image: url(../images/bg-hightech.jpg);
+	}
 }
 
 
